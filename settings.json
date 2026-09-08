@@ -1,137 +1,370 @@
 {
-  // ============================================================
-  // 编辑器核心体验
-  // ============================================================
+  "editor.renderLineHighlight": "all",
+  "locale": "zh-cn",
   "editor.fontSize": 15,
-  "editor.fontFamily": "JetBrains Mono, 'Microsoft YaHei', Consolas, monospace",
-  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Maple Mono NF CN', 'JetBrains Mono', 'Sarasa Mono SC', 'Microsoft YaHei', Consolas, monospace",
+  "editor.fontLigatures": false,
+  "editor.fontWeight": "500",
   "editor.lineHeight": 1.6,
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.wordWrap": "off",
+  "editor.wordWrapColumn": 120,
+  "editor.wrappingIndent": "indent",
+  "editor.renderWhitespace": "boundary",
+  "editor.guides.indentation": true,
+  "editor.guides.highlightActiveIndentation": "always",
   "editor.cursorBlinking": "phase",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.cursorStyle": "line-thin",
+  "editor.cursorWidth": 2,
+  "editor.smoothScrolling": false,
   "editor.minimap.enabled": false,
-
-  // 大文件处理
+  "editor.experimental.asyncTokenization": true,
+  "editor.mouseWheelScrollSensitivity": 1.5,
+  "editor.fastScrollSensitivity": 5,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.maxLineCount": 5,
   "editor.largeFileOptimizations": true,
-
-  // 预览行为
   "workbench.editor.enablePreview": false,
-
-  // ============================================================
-  // 主题
-  // ============================================================
-  "workbench.colorTheme": "GitHub Dark",
-
-  // ============================================================
-  // 文件关联（核心修复区）
-  // ============================================================
-  // 语言类型关联
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.list.smoothScrolling": false,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.pinnedTabSizing": "compact",
+  "workbench.editor.tabActionLocation": "right",
+  "workbench.panel.defaultLocation": "right",
+  "workbench.panel.opensMaximized": "preserve",
+  "window.menuBarVisibility": "classic",
+  "window.titleBarStyle": "custom",
+  "window.commandCenter": true,
+  "window.zoomLevel": 1,
   "files.associations": {
     "*.cla": "c",
     "*.cmd": "plaintext",
     "*.syscfg": "json"
   },
-
-  // 编辑器类型关联（修复二进制检测问题）
   "workbench.editorAssociations": {
-    "*.cla": "default"  // 强制文本编辑器
+    "*.cla": "default"
   },
-
-  // 自动检测编码
-  "files.autoGuessEncoding": true,
-
-  // ============================================================
-  // 代码导航与搜索
-  // ============================================================
+  "files.autoGuessEncoding": false,
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
   "workbench.editor.revealIfOpen": true,
-
-  // 代码折叠
   "editor.foldingStrategy": "indentation",
   "editor.showFoldingControls": "always",
-
-  // 括号高亮
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
-
-  // ============================================================
-  // 滚动条
-  // ============================================================
   "editor.scrollbar.horizontalScrollbarSize": 20,
   "editor.scrollbar.vertical": "visible",
   "workbench.colorCustomizations": {
     "scrollbarSlider.background": "#88888880",
     "scrollbarSlider.hoverBackground": "#aaaaaacc",
     "scrollbarSlider.activeBackground": "#ffffffcc",
-    "editor.lineHighlightBackground": "#ffffff45",
-    "editor.lineHighlightBorder": "#00000000",
-    "list.inactiveSelectionBackground": "#264F78",
-    "list.inactiveSelectionForeground": "#FFFFFF",
-  },
-  "editor.tokenColorCustomizations": {
-    "comments": "#57ab5a"
-  },
-
-  // ============================================================
-  // 安全
-  // ============================================================
-  "security.workspace.trust.untrustedFiles": "open",
-
-  // ============================================================
-  // AI 工具
-  // ============================================================
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "claudeCode.preferredLocation": "panel",
-
-  // ============================================================
-  // 终端
-  // ============================================================
-  "terminal.integrated.fontSize": 17,
-  "terminal.integrated.fontFamily": "JetBrains Mono, 'Microsoft YaHei', Consolas, monospace",
-  "terminal.integrated.initialHint": false,
-  "terminal.integrated.gpuAcceleration": "off",
-  "terminal.integrated.env.windows": {
-    "HTTP_PROXY": "http://14a873aba4e22:47f1dc71ad@37.218.214.208:12323",
-    "HTTPS_PROXY": "http://14a873aba4e22:47f1dc71ad@37.218.214.208:12323"
-  },
-  "terminal.integrated.profiles.windows": {
-    "PowerShell": {
-      "source": "PowerShell",
-      "args": ["-ExecutionPolicy", "Bypass", "-NoExit", "-Command", "curl.exe -s --max-time 5 ifconfig.me"]
+    "[One Dark Pro*]": {
+      "foreground": "#DCE3ED",
+      "descriptionForeground": "#A0ACBD",
+      "disabledForeground": "#8290A4",
+      "icon.foreground": "#AFBDCF",
+      "focusBorder": "#70B7FF99",
+      "widget.border": "#465365",
+      "widget.shadow": "#00000055",
+      "editor.background": "#2D3541",
+      "editor.foreground": "#DCE3ED",
+      "sideBar.background": "#242B35",
+      "sideBar.foreground": "#C8D2E0",
+      "sideBar.border": "#394453",
+      "sideBarTitle.foreground": "#DCE3ED",
+      "sideBarSectionHeader.background": "#29323E",
+      "sideBarSectionHeader.foreground": "#C8D2E0",
+      "activityBar.background": "#20262F",
+      "activityBar.foreground": "#E5ECF5",
+      "activityBar.inactiveForeground": "#91A1B8",
+      "activityBar.border": "#394453",
+      "activityBar.activeBorder": "#70B7FF",
+      "activityBar.activeBackground": "#70B7FF12",
+      "activityBarBadge.background": "#315F8B",
+      "activityBarBadge.foreground": "#FFFFFF",
+      "titleBar.activeBackground": "#20262F",
+      "titleBar.activeForeground": "#DCE3ED",
+      "titleBar.inactiveBackground": "#20262F",
+      "titleBar.inactiveForeground": "#A0ACBD",
+      "panel.background": "#242B35",
+      "panel.border": "#465365",
+      "panelTitle.activeForeground": "#DCE3ED",
+      "panelTitle.inactiveForeground": "#A0ACBD",
+      "panelTitle.activeBorder": "#70B7FF",
+      "statusBar.background": "#20262F",
+      "statusBar.foreground": "#BAC8DA",
+      "statusBar.border": "#394453",
+      "statusBar.noFolderBackground": "#20262F",
+      "statusBar.noFolderForeground": "#BAC8DA",
+      "statusBar.debuggingBackground": "#51422B",
+      "statusBar.debuggingForeground": "#F7DCA5",
+      "editor.lineHighlightBackground": "#304660",
+      "editor.lineHighlightBorder": "#75A6D6",
+      "editor.selectionBackground": "#245783BF",
+      "editor.selectionForeground": "#FFFFFF",
+      "editor.inactiveSelectionBackground": "#24578380",
+      "editor.selectionHighlightBackground": "#B6A3F52B",
+      "editor.selectionHighlightBorder": "#B6A3F566",
+      "editor.wordHighlightBackground": "#B6A3F524",
+      "editor.wordHighlightBorder": "#B6A3F566",
+      "editor.wordHighlightStrongBackground": "#E5B5672E",
+      "editor.wordHighlightStrongBorder": "#E5B56799",
+      "editor.wordHighlightTextBackground": "#B6A3F524",
+      "editor.wordHighlightTextBorder": "#B6A3F566",
+      "selection.background": "#245783BF",
+      "editor.findMatchBackground": "#00D9FF",
+      "editor.findMatchForeground": "#002B36",
+      "editor.findMatchBorder": "#A5FFFF",
+      "editor.findMatchHighlightBackground": "#00BCD466",
+      "editor.findMatchHighlightBorder": "#00D9FF99",
+      "searchEditor.findMatchBackground": "#00BCD466",
+      "searchEditor.findMatchBorder": "#00D9FF99",
+      "editor.rangeHighlightBackground": "#70B7FF14",
+      "editor.rangeHighlightBorder": "#70B7FF44",
+      "editorCursor.foreground": "#8BC6FF",
+      "editorLineNumber.foreground": "#8D9DB3",
+      "editorLineNumber.activeForeground": "#E6F3FF",
+      "editorBracketMatch.background": "#70B7FF26",
+      "editorBracketMatch.border": "#70B7FFBB",
+      "editorWhitespace.foreground": "#64718766",
+      "editorRuler.foreground": "#64718733",
+      "editorIndentGuide.background1": "#475364",
+      "editorIndentGuide.activeBackground1": "#70B7FF99",
+      "editorStickyScroll.background": "#29313C",
+      "editorStickyScrollHover.background": "#343E4C",
+      "list.activeSelectionBackground": "#284F75",
+      "list.activeSelectionForeground": "#FFFFFF",
+      "list.inactiveSelectionBackground": "#34465D",
+      "list.inactiveSelectionForeground": "#E2EAF5",
+      "list.focusAndSelectionOutline": "#70B7FF99",
+      "list.focusOutline": "#70B7FF99",
+      "list.hoverBackground": "#303B4A",
+      "list.hoverForeground": "#E2EAF5",
+      "list.highlightForeground": "#87C8FF",
+      "quickInput.background": "#29323E",
+      "quickInput.foreground": "#DCE3ED",
+      "quickInputList.focusBackground": "#284F75",
+      "quickInputList.focusForeground": "#FFFFFF",
+      "menu.background": "#29323E",
+      "menu.foreground": "#DCE3ED",
+      "menu.border": "#465365",
+      "menu.selectionBackground": "#284F75",
+      "menu.selectionForeground": "#FFFFFF",
+      "input.background": "#202833",
+      "input.foreground": "#E2EAF5",
+      "input.border": "#536177",
+      "input.placeholderForeground": "#A0ACBD",
+      "inputOption.activeBackground": "#284F7580",
+      "inputOption.activeBorder": "#70B7FF",
+      "inputOption.activeForeground": "#E5F2FF",
+      "dropdown.background": "#29323E",
+      "dropdown.foreground": "#DCE3ED",
+      "dropdown.border": "#536177",
+      "button.background": "#315F8B",
+      "button.foreground": "#FFFFFF",
+      "button.hoverBackground": "#3B70A1",
+      "button.secondaryBackground": "#3C4859",
+      "button.secondaryForeground": "#E2EAF5",
+      "button.secondaryHoverBackground": "#48566A",
+      "tab.activeBackground": "#2D3541",
+      "tab.inactiveBackground": "#242B35",
+      "tab.activeForeground": "#E5ECF5",
+      "tab.inactiveForeground": "#A0ACBD",
+      "tab.unfocusedActiveForeground": "#C8D2E0",
+      "tab.unfocusedInactiveForeground": "#91A1B8",
+      "tab.activeBorderTop": "#70B7FF",
+      "tab.unfocusedActiveBorderTop": "#70B7FF66",
+      "tab.border": "#394453",
+      "editorGroupHeader.tabsBackground": "#20262F",
+      "breadcrumb.foreground": "#A0ACBD",
+      "breadcrumb.focusForeground": "#E5ECF5",
+      "breadcrumb.activeSelectionForeground": "#87C8FF",
+      "editorWidget.background": "#29323E",
+      "editorWidget.foreground": "#DCE3ED",
+      "editorWidget.border": "#536177",
+      "editorSuggestWidget.background": "#29323E",
+      "editorSuggestWidget.foreground": "#DCE3ED",
+      "editorSuggestWidget.border": "#536177",
+      "editorSuggestWidget.selectedBackground": "#284F75",
+      "editorSuggestWidget.highlightForeground": "#87C8FF",
+      "editorHoverWidget.background": "#29323E",
+      "editorHoverWidget.foreground": "#DCE3ED",
+      "editorHoverWidget.border": "#536177",
+      "notifications.background": "#29323E",
+      "notifications.foreground": "#DCE3ED",
+      "notifications.border": "#465365",
+      "terminal.background": "#242B35",
+      "terminal.foreground": "#DCE3ED",
+      "terminal.selectionBackground": "#245783BF",
+      "terminal.selectionForeground": "#FFFFFF",
+      "terminal.inactiveSelectionBackground": "#24578380",
+      "terminalCursor.foreground": "#8BC6FF",
+      "terminalCursor.background": "#242B35",
+      "terminal.ansiBlack": "#525F73",
+      "terminal.ansiBrightBlack": "#A0ACBD",
+      "terminal.ansiRed": "#F28B82",
+      "terminal.ansiBrightRed": "#FFB0A7",
+      "terminal.ansiGreen": "#A8D49B",
+      "terminal.ansiBrightGreen": "#C0E4B4",
+      "terminal.ansiYellow": "#E5C07B",
+      "terminal.ansiBrightYellow": "#F4D79B",
+      "terminal.ansiBlue": "#82B6F2",
+      "terminal.ansiBrightBlue": "#A6D0FF",
+      "terminal.ansiMagenta": "#C5A3F5",
+      "terminal.ansiBrightMagenta": "#DEC5FF",
+      "terminal.ansiCyan": "#79DCE8",
+      "terminal.ansiBrightCyan": "#A6EDF4",
+      "terminal.ansiWhite": "#DCE3ED",
+      "terminal.ansiBrightWhite": "#F3F6FA",
+      "scrollbarSlider.background": "#A0ACBD55",
+      "scrollbarSlider.hoverBackground": "#A0ACBD88",
+      "scrollbarSlider.activeBackground": "#A0ACBDBB",
+      "editorError.foreground": "#F28B82",
+      "editorWarning.foreground": "#E5C07B",
+      "editorInfo.foreground": "#82B6F2",
+      "errorForeground": "#F28B82",
+      "list.errorForeground": "#F28B82",
+      "list.warningForeground": "#E5C07B",
+      "gitDecoration.modifiedResourceForeground": "#82B6F2",
+      "gitDecoration.addedResourceForeground": "#A8D49B",
+      "gitDecoration.untrackedResourceForeground": "#A8D49B",
+      "gitDecoration.deletedResourceForeground": "#F28B82",
+      "gitDecoration.conflictingResourceForeground": "#E5C07B",
+      "gitDecoration.ignoredResourceForeground": "#91A1B8",
+      "editorGutter.addedBackground": "#A8D49B",
+      "editorGutter.modifiedBackground": "#82B6F2",
+      "editorGutter.deletedBackground": "#F28B82",
+      "diffEditor.insertedTextBackground": "#A8D49B26",
+      "diffEditor.removedTextBackground": "#F28B8226",
+      "diffEditor.insertedLineBackground": "#A8D49B0D",
+      "diffEditor.removedLineBackground": "#F28B820D",
+      "badge.background": "#34465D",
+      "badge.foreground": "#E2EAF5",
+      "progressBar.background": "#70B7FF",
+      "textLink.foreground": "#87C8FF",
+      "textLink.activeForeground": "#B5DCFF"
     }
   },
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
-
-  // ============================================================
-  // 代理
-  // ============================================================
-  "http.proxy": "http://14a873aba4e22:47f1dc71ad@37.218.214.208:12323",
-
-  // ============================================================
-  // 远程开发
-  // ============================================================
-  "remote.SSH.remotePlatform": {
-    "connect.westc.gpuhub.com": "linux"
+  "editor.tokenColorCustomizations": {
+    "[One Dark Pro*]": {
+      "comments": "#A7B4C6",
+      "textMateRules": [
+        {
+          "scope": [
+            "keyword",
+            "keyword.control",
+            "storage.type",
+            "storage.modifier",
+            "entity.name.type"
+          ],
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": [
+            "variable",
+            "variable.other",
+            "variable.other.readwrite"
+          ],
+          "settings": {
+            "foreground": "#DCE3ED"
+          }
+        },
+        {
+          "scope": [
+            "variable.parameter",
+            "variable.parameter.function",
+            "variable.parameter.function-call"
+          ],
+          "settings": {
+            "foreground": "#D0DBEA",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": [
+            "entity.name.function",
+            "meta.function-call entity.name.function"
+          ],
+          "settings": {
+            "foreground": "#7AB8FF"
+          }
+        },
+        {
+          "scope": [
+            "variable.other.constant",
+            "variable.other.enummember"
+          ],
+          "settings": {
+            "foreground": "#E5B783"
+          }
+        },
+        {
+          "scope": [
+            "entity.name.function.preprocessor",
+            "meta.preprocessor"
+          ],
+          "settings": {
+            "foreground": "#C5A3F5"
+          }
+        }
+      ],
+      "keywords": "#C5A3F5",
+      "types": "#79DCE8",
+      "strings": "#B4D99A",
+      "numbers": "#E5B783"
+    }
   },
-
-  // ============================================================
-  // Git
-  // ============================================================
+  "security.workspace.trust.untrustedFiles": "open",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "claudeCode.preferredLocation": "panel",
+  "extensions.experimental.affinity": {
+    "anthropic.claude-code": 1
+  },
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "'Maple Mono NF CN', 'JetBrains Mono', 'Sarasa Mono SC', 'Microsoft YaHei', Consolas, monospace",
+  "terminal.integrated.lineHeight": 1.25,
+  "terminal.integrated.letterSpacing": 0.5,
+  "terminal.integrated.initialHint": false,
+  "terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.minimumContrastRatio": 1,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.tabs.title": "${cwdFolder}",
+  "terminal.integrated.tabs.description": "${process}",
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.enablePersistentSessions": false,
   "git.openRepositoryInParentFolders": "always",
   "git.enableSmartCommit": true,
-
-  // ============================================================
-  // clangd（保留你的路径）
-  // ============================================================
-  "clangd.path": "c:\\Users\\fengy\\AppData\\Roaming\\Cursor\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\21.1.8\\clangd_21.1.8\\bin\\clangd.exe",
-
-  // ============================================================
-  // 其他
-  // ============================================================
+  "C_Cpp.errorSquiggles": "disabled",
+  "C_Cpp.intelliSenseEngine": "default",
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/**"
+  ],
+  "C_Cpp.default.browse.path": [
+    "${workspaceFolder}"
+  ],
+  "C_Cpp.default.browse.limitSymbolsToIncludedHeaders": true,
+  "C_Cpp.default.cStandard": "c99",
+  "C_Cpp.default.cppStandard": "c++17",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.gotoLocation.multipleReferences": "gotoAndPeek",
   "chat.viewSessions.orientation": "stacked",
-
-  // ============================================================
-  // 性能优化
-  // ============================================================
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/node_modules/**": true,
@@ -141,7 +374,6 @@
     "**/*.out": true,
     "**/*.map": true
   },
-
   "search.exclude": {
     "**/build": true,
     "**/Debug": true,
@@ -150,82 +382,23 @@
     "**/*.out": true,
     "**/*.obj": true
   },
-  "editor.scrollbar.verticalScrollbarSize": 20,
-  "workbench.iconTheme": "material-icon-theme",
-  "json.schemas": [
-
-
-
-  ],
+  "json.schemas": [],
   "launch": {
     "configurations": [],
     "compounds": []
   },
-  "debug.console.fontFamily": "JetBrains Mono, 'JetBrains Mono', Consolas, monospace",
-  "terminal.integrated.fontFamily": "JetBrains Mono, 'Noto Sans SC', Consolas, monospace",
-  "notebook.markup.fontFamily": "JetBrains Mono, 'JetBrains Mono', Consolas, monospace",
-  "notebook.output.fontFamily": "JetBrains Mono, 'JetBrains Mono', Consolas, monospace",
-  "terminal.integrated.fontLigatures.fallbackLigatures": [
-  "editor.scrollbar.verticalScrollbarSize": 20
-    "<--",
-    "<---",
-    "<<-",
-    "<-",
-    "->",
-    "->>",
-    "-->",
-    "--->",
-    "<==",
-    "<===",
-    "<<=",
-    "<=",
-    "=>",
-    "=>>",
-    "==>",
-    "===>",
-    ">=",
-    ">>=",
-    "<->",
-    "<-->",
-    "<--->",
-    "<---->",
-    "<=>",
-    "<==>",
-    "<===>",
-    "<====>",
-    "::",
-    ":::",
-    "<~~",
-    "</",
-    "</>",
-    "/>",
-    "~~>",
-    "==",
-    "!=",
-    "/=",
-    "~=",
-    "<>",
-    "===",
-    "!==",
-    "!===",
-    "<:",
-    ":=",
-    "*=",
-    "*+",
-    "<*",
-    "<*>",
-    "*>",
-    "<|",
-    "<|>",
-    "|>",
-    "+*",
-    "=*",
-    "=:",
-    ":>",
-    "/*",
-    "*/",
-    "+++",
-    "<!--",
-    "<!---"
-  ]
+  "editor.scrollbar.verticalScrollbarSize": 20,
+  "workbench.startupEditor": "none",
+  "search.smartCase": true,
+  "breadcrumbs.enabled": true,
+  "git.blame.editorDecoration.enabled": false,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "terminal.integrated.enableMultiLinePasteWarning": "auto",
+  "terminal.integrated.mouseWheelScrollSensitivity": 3,
+  "workbench.colorTheme": "One Dark Pro Mix",
+  "window.openFoldersInNewWindow": "on",
+  "editor.accessibilitySupport": "on",
+  "workbench.browser.showInTitleBar": false,
+  "chat.titleBar.openInAgentsWindow.enabled": false
 }
